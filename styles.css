@@ -1,0 +1,19 @@
+html {font-size: 150px; /* px significa "pixels": o tamanho da fonte base é agora de 10 pixels */
+    font-family: "Open Sans", sans-serif; /* este deve ser o nome da fonte que você obteve no Google Fonts */
+    text-align: center;
+      
+    background-color: aqua;
+      margin: 0;
+      padding: 20px 0;
+      color: crimson;
+      text-shadow: 3px 3px 1px black;
+      
+}
+
+body {
+    color:red;
+    color:green;
+    color:blue;
+}
+
+  

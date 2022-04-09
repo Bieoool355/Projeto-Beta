@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criação de Elementos com JavaScript</title>
+
+    <!--Desenvolvendo funções com JavaScript-->
+    
+    <script>
+        function execute(){
+            var super_nome=document.getElementById("inserir_nome").value;
+            //alert(super_nome);
+
+            if (super_nome == "") {
+                alert("Favor, inserir o nome!");
+                document.getElementById("inserir_nome").focus(); 
+                
+            } else{
+                        
+            var list_nomes=document.getElementById("lista").innerHTML;
+            list_nomes=list_nomes+"<li>"+super_nome+"</li>";
+            document.getElementById("lista").innerHTML=list_nomes;
+            document.getElementById("inserir_nome").focus();            
+            inserir_nome.value=""
+                           
+            }
+        }
+                     
+                
+    </script>
+
+</head>
+<body>
+    <h3>Sistema de Preenchimento de Informações</h3>
+    <label>Entre com o nome desejado:</label>
+    <input type="text" id="inserir_nome">
+    <input type="button" onclick="execute()" value="Processar">
+
+    <!--Criando uma lista de nomes-->
+
+    <ul id="lista">
+        
+
+    </ul>
+</body>
+</html>
